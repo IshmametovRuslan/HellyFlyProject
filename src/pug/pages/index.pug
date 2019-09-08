@@ -1,0 +1,275 @@
+doctype html
+html(lang="ru-RU")
+    head
+        title Helly Fly
+        link(rel='stylesheet' type='text/css' href='static/css/main.css')
+    body
+        .wrraper
+            .header
+                .header__logo
+                    a(href='#')
+                .header__phone-number
+                    p Телефон: <span> 8(800)-123-12-12 </span>
+            .reservation
+                .reservation__block
+                    .reservation__description
+                        p Эксклюзивная <span>фотосессия</span> при полете на вертолете
+                    .reservation__price-block
+                        .price-block__price
+                            p.price-text Стоимость:
+                            p.price-count 1500&#8381;
+
+                        .precent-icon %
+                    .reservation__button
+                        button Забронировать место
+            .main
+                .main__description
+                    .main__description__left-block
+                        .description__left-block__text
+                            h1 Фотосессия в вертолете
+                            p Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты
+                        .description__left-block__advantages
+                            .descriptions-advantages__item
+                                .advantages-item__icon__1
+                                .advantages-item-1__text
+                                    p 3 часа съемки
+                            .descriptions-advantages__item
+                                .advantages-item__icon__2
+                                .advantages-item__text
+                                    p Более 50 фотографий
+                            .descriptions-advantages__item
+                                .advantages-item__icon__3
+                                .advantages-item__text
+                                    p Москва
+                            .descriptions-advantages__item
+                                .advantages-item__icon__4
+                                .advantages-item__text
+                                    p Готовы ответить на любые вопросы
+                        .block__reviews
+                            .reviews__icon
+                            .reviews__text
+                                p Более <span>50</span> отзывов с оценкой
+                            .reviews__stars
+                    .main__description__right-block
+                        .description__video-block
+                            a(href='#')
+                                img(src="static/img/icons/Vector 2.png")
+
+
+                .main__photogallery
+                    .main__photogallery__head
+                        p Фотографии пакета:
+                    .main__photogallery__content
+                        .photogallery__content__item-1
+                        .photogallery__content__item-2
+                        .photogallery__content__item-3
+                        .photogallery__content__item-4
+                        .photogallery__content__item-5
+                        .photogallery__content__item-6
+                        .photogallery__content__item-7
+                        .photogallery__content__item-8
+                    .main__photogallery__footer
+                        .photogallery__footer__all-photo-btn
+                            a(href='#') Показать все фото
+                .main__about
+                    .main__about-organizer
+                        .main__about-organizer__left
+                            .left__item
+                                .left__item__head
+                                    p Об организаторе:
+                                .left__item__text
+                                    p
+                                        | Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом
+                                        | группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге,
+                                        | операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах. Сначала
+                                        | мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует
+                                        | бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся…
+                                .left__item__read-more
+                                    a(href='#') Читать ещё...
+                            .left__item
+                                .left__item__head
+                                    p Что я предоставлю:
+                                .left__item__text
+                                    p
+                                        | Встречу вас на машине после длительного перелёта. Качественный подбор
+                                        | места и локации для вашей съемки. При необходимости всегда возможно прерваться
+                                        | на обед/ужин. Более 50 фотографий на выходе с обработкой и
+                                        | замечательные впечатления о Дубае
+                                .left__item__read-more
+                                    a(href='#') Читать ещё...
+                        .main__about-organizer__right
+                            .right__photograph-info__heart-icon
+                            .right__photograph-info__avatar
+                            .right__photograph-info__name
+                                p Марина Иванова
+                            .right__photograph-info__profession
+                                p Фотограф
+                            .right__photograph-info__more-info
+                                p
+                                    a Показать больше тнформации о фотографе
+
+                .main__shuting-date
+                    .shuting-date__head
+                        p Доступная съёмка </br> в ближайшее время:
+                    .shuting-date__picker
+                        .shuting-date__picker__day
+                            p Пятница, 14 сентября
+                            .picker__day__calendar-icon
+                        .shuting-date__picker-time
+                            .shuting-date__picker-time__left
+                                .shuting-date__picker-time__time 15:00 - 18:00
+                                .shuting-date__picker-time__price 1500 P
+                                .shuting-date__picker-time__places-left Осталось 1 место
+                            .shuting-date__picker-time__right
+                                .shuting-date__picker-time__coose-btn
+                                button Выбрать
+                        .shuting-date__picker-time
+                            .shuting-date__picker-time__left
+                                .shuting-date__picker-time__time 19:00 - 22:00
+                                .shuting-date__picker-time__price 1500 Р
+                                .shuting-date__picker-time__places-left Осталось 1 место
+                            .shuting-date__picker-time__right
+                                .shuting-date__picker-time__coose-btn
+                                button Выбрать
+                        .block__reviews
+                            .reviews__icon
+                            .reviews__text
+                                p Более <span>50</span> отзывов с оценкой
+                            .reviews__stars
+            .map
+                #map
+                .shuting-information
+                    ul
+                        li.shuting-information__item
+                            .flex__left-block
+                                .shuting-information__icon
+                                    p 1
+                            .flex__right-block
+                                .shuting-information__ask
+                                    p Где встречаемся?
+                                .shuting-information__answer
+                                    p Москва
+                        li.shuting-information__item
+                            .flex__left-block
+                                .shuting-information__icon
+                                    p 2
+                            .flex__right-block
+                                .shuting-information__ask
+                                    p Время съёмки
+                                .shuting-information__answer
+                                    p 3 часа
+                        li.shuting-information__item
+                            .flex__left-block
+                                .shuting-information__icon
+                                    p 3
+                            .flex__right-block
+                                .shuting-information__ask
+                                    p Мест осталось:
+                                .shuting-information__answer
+                                    p 2 места
+                        li.shuting-information__photograph-info
+                            .flex__left-block
+                                .shuting-information__photograph-info_avatar
+                            .flex__right-block
+                                .shuting-information__photograph-info_name
+                                    p Марина Иванова
+                                .shuting-information__photograph-info_profession
+                                    p Фотограф
+                                .shuting-information__photograph-info_more-info
+                                    a Показать больше информации
+            .reviews-block
+                .reviews-block__head
+                    p Отзывы:
+                .reviews-block__reviews-items
+                    .reviews-block__reviews-items_review-item.item-1
+                        .review-item__avatar.avatar-1
+                        .review-item__data
+                            .review-item__data__name
+                                p Валерия Антонова
+                            .review-item__data__proffesion
+                                p Арт-директор
+
+                            .review-item__data__title
+                                .review-item__data__stars
+                                .review-item__data__icon
+                                .review-item__data__text
+                                    p Супер! Я бы заказал съемку снова!
+                            .review-item__text
+                                p
+                                    | Хотим выразить огромную благодарность вашей компании! Получили море ощущений,
+                                    | все прошло просто замечательно. Фотки получились великолепные, отдельное спасибо
+                                    | фотографу!
+                            .review-item__date
+                                p 27 Апреля, 2019г.
+                    .reviews-block__reviews-items_review-item.item-2
+                        .review-item__avatar.avatar-2
+                        .review-item__data
+                            .review-item__data__name
+                                p Виталий Петров
+                            .review-item__data__proffesion
+                                p Фотограф
+                            .review-item__data__title
+                                .review-item__data__stars
+                                .review-item__data__icon
+                                .review-item__data__text
+                                    p Супер! Я бы заказал съемку снова!
+                            .review-item__text
+                                p
+                                    | Восторг! :) Очень понравилось :) Захватили последний теплый, солнечный
+                                    | октябрьский день :) Впечатлило всё: сам вертолет, взлет, полёт, приземление.
+                                    | Организация полёта отличная. Спасибо!
+
+                            .review-item__date
+                                p 19 Апреля, 2019г
+                    .reviews-block__reviews-items_review-item.item-3
+                        .review-item__avatar.avatar-3
+                        .review-item__data
+                            .review-item__data__name
+                                p Джим Керри
+                            .review-item__data__proffesion
+                                p
+
+                            .review-item__data__title
+                                .review-item__data__stars
+                                .review-item__data__icon
+                                .review-item__data__text
+                                    p Супер! Я бы заказала съемку снова!
+                            .review-item__text
+                                p
+                                    | Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!!
+                                    | Кстати закуски были вкусными и сытными))Мы с собой ничего не брали. | Сами много
+                                    | фоткались,поэтому воспоминания обалденные!!!)) А еще нам всем напечатали по
+                                    | сертификату воздухоплавателя, правда некоторые ленятся за ним съездить))) Но все равно
+                                    | приятно. Короче, Презентстар – проверено. Оценка: пять!
+
+                            .review-item__date
+                                p 11 Апреля, 2019г.
+                .reviews-block__show-all
+                    a Показать Всё (134)
+            .footer
+                .footer__social-media
+                    .footer__logo
+                        a(href='#')
+                    .footer__sm-icons
+                        .sm-icons__vk
+                            a(href='#')
+                        .sm-icons__facebook
+                            a(href='#')
+                        .sm-icons__instagram
+                            a(href='#')
+                        .footer__language
+                        p RU
+                .footer__copyright
+                    .footer__card
+                        .card__icon_mastercard
+                        .card__icon_visa
+
+                    .footer__copyright-text
+                        p Тех. поддержка: 8(800)700-00-00
+                        p © 2018 HELYFLY. All Rights Reserved.
+
+
+
+
+script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<7931ffc6-2427-4235-8e4d-5cae3d374cae>')
+script(src='static/js/main.js')
