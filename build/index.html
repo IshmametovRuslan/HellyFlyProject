@@ -16,7 +16,7 @@
             <p>Бронирование</p>
           </div>
           <div class="modal__window__form">
-            <form method="post" action="">
+            <form method="post" action="form.php">
               <div class="form__date">
                 <label>Дата<span>*</span></label>
                 <p>
@@ -50,9 +50,9 @@
               <div class="form__card-data">
                 <div class="form__card-data__number">
                   <label>Данные карты<span>*</span></label>
-                  <input pattern="[0-9]{13,16}" type="num" name="number" placeholder="Номер карты" required>
-                  <input type="num" name="validity" placeholder="Срок действия" required>
-                  <input type="num" name="cvv" placeholder="CVV" required>
+                  <input pattern="[0-9]{13,16}" type="number" name="number" placeholder="Номер карты" required>
+                  <input type="number" name="validity" placeholder="Срок действия" required>
+                  <input type="number" name="cvv" placeholder="CVV" required>
                 </div>
               </div>
               <div class="form__public-offer">

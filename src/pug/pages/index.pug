@@ -7,7 +7,6 @@ html(lang="ru-RU")
         title Helly Fly
         link(rel='stylesheet' type='text/css' href='static/css/main.css')
     body
-
         .wrraper
             .modal
                 .modal__window
@@ -16,7 +15,7 @@ html(lang="ru-RU")
                     .modal__window__head
                         p Бронирование
                     .modal__window__form
-                        form(method='post' action='')
+                        form(method='post' action='form.php')
                             .form__date
                                 label Дата<span>*</span>
                                 p
@@ -66,19 +65,19 @@ html(lang="ru-RU")
                                     label Данные карты<span>*</span>
                                     input(
                                         pattern='[0-9]{13,16}'
-                                        type='num'
+                                        type='number'
                                         name='number'
                                         placeholder='Номер карты'
                                         required
                                     )
                                     input(
-                                        type='num'
+                                        type='number'
                                         name='validity'
                                         placeholder='Срок действия'
                                         required
                                     )
                                     input(
-                                        type='num'
+                                        type='number'
                                         name='cvv'
                                         placeholder='CVV'
                                         required
