@@ -1,0 +1,140 @@
+@media screen and (max-width: 420px) {
+
+  .wrraper {
+    .header {
+      /* header */
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .header__logo {
+        margin: 0 0 0 15px;
+      }
+
+      .header__phone-number {
+        display: none;
+      }
+
+      .header__city-name {
+        display: block;
+      }
+
+      .header__user-icon {
+        display: block;
+
+      }
+    }
+
+    .reservation {
+      height: 655px;
+      display: flex;
+      background-size: auto;
+
+      .reservation__block {
+        margin: auto;
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrraper {
+    .main {
+      .main__description {
+        display: flex;
+        flex-direction: column;
+
+        .main__description__left-block,
+        .main__description__right-block {
+          width: 100%;
+        }
+
+        .main__description__left-block {
+          .block__reviews {
+            flex-direction: column;
+          }
+        }
+
+        .main__description__right-block {
+          margin: 30px auto;
+
+          .description__video-block {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .main__about {
+        .main__about-organizer {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 30px;
+
+          .main__about-organizer__left,
+          .main__about-organizer__right {
+            width: 100%;
+          }
+
+        }
+      }
+
+      .main__photogallery {
+        .main__photogallery__content {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .main__shuting-date {
+        .shuting-date__picker {
+          .shuting-date__picker-time {
+            margin-bottom: 0 !important;
+          }
+
+          .block__reviews {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+
+
+    }
+
+    .map {
+      height: 424px;
+    }
+
+    .reviews-block {
+      .reviews-block__reviews-items {
+        .reviews-block__reviews-items_review-item {
+          flex-direction: column;
+          align-items: center;
+
+          .review-item__data {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .review-item__data__title {
+              .review-item__data__stars {
+                display: none;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .shuting-information {
+    display: none;
+
+  }
+}
+

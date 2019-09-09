@@ -1,21 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap');
+@import "modal";
+
 
 * {
   margin: 0;
   padding: 0;
   outline: 0 !important;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
   max-width: 1920px;
+  font-family: 'Montserrat', sans-serif;
 }
+
+
 
 .wrraper {
   position: absolute;
   width: 100%;
   height: 5310px;
-  font-family: 'Montserrat', sans-serif;
 
   .header {
     /* header */
@@ -24,10 +29,15 @@ body {
     height: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: #FFFFFF;
 
+    .header__city-name {
+      display: none;
+    }
+
     .header__logo {
-      margin: 0 0 0 390px;
+      margin: auto;
       background-image: url("../img/HELYFLY2.png");
       background-position: center;
       background-repeat: no-repeat;
@@ -43,7 +53,7 @@ body {
     }
 
     .header__phone-number {
-      margin-left: 36px;
+      margin: auto;
       font-size: 14px;
       color: #B3B3B3;
 
@@ -52,27 +62,40 @@ body {
       }
     }
 
+    .header__user-icon {
+      display: none;
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+      background-image: url("../img/icons/Фигура 679.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+
   }
 
   .reservation {
     position: relative;
     width: 100%;
     height: 840px;
+    display: flex;
     background-image: url("../img/helimain.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     .reservation__block {
-      display: flex;
-      justify-content: flex-start;
+      max-width: 887px;
+      width: 100%;
+      display: block;
       flex-direction: column;
-      position: absolute;
-      margin: 286px 0 0 390px;
+      margin: auto;
+      padding: 15px;
 
       .reservation__description {
         position: relative;
-        max-width: 887px;
         margin: 0 0 29px 0;
         font-style: normal;
         font-weight: bold;
@@ -122,7 +145,7 @@ body {
         .precent-icon {
           width: 52px;
           height: 52px;
-          margin: 0 0 0 7px;
+          margin: 0 0 0 35px;
           border-radius: 50%;
           border: 1px solid #FFFFFF;
           box-sizing: border-box;
@@ -172,6 +195,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 15px;
 
     .main__description {
       width: 100%;
@@ -285,13 +309,22 @@ body {
 
         .description__video-block {
           position: relative;
-          width: 554px;
+          max-width: 554px;
           height: 374px;
           border-radius: 4px;
           background-image: url("../img/video-preview.png");
           background-size: auto;
           background-position: center;
           background-repeat: no-repeat;
+
+          .player {
+            width: 100%;
+            height: 100%;
+            display: none;
+            &.player_visible {
+              display: block;
+            }
+          }
 
           a {
             display: block;
@@ -504,7 +537,7 @@ body {
 
           .right__photograph-info__more-info {
             text-align: center;
-            width: 290px;
+            max-width: 290px;
 
             a {
               text-decoration: none;
@@ -534,7 +567,7 @@ body {
       font-style: normal;
 
       .shuting-date__head {
-        width: 288px;
+        max-width: 288px;
         font-weight: 500;
         font-size: 20px;
         line-height: 29px;
@@ -542,7 +575,7 @@ body {
       }
 
       .shuting-date__picker {
-        width: 770px;
+        max-width: 770px;
         height: 458px;
         border: 1px solid #C7C7C7;
         box-sizing: border-box;
@@ -688,7 +721,7 @@ body {
       left: 390px;
       top: 20px;
       padding: 50px 30px;
-      width: 420px;
+      max-width: 420px;
       height: 470px;
       background: #FFFFFF;
       border: 1px solid #C7C7C7;
@@ -777,8 +810,9 @@ body {
   }
 
   .reviews-block {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto 47px;
+    padding: 15px;
 
     .reviews-block__head {
       margin-bottom: 50px;
@@ -823,7 +857,7 @@ body {
         }
 
         .review-item__data {
-          width: 530px;
+          max-width: 530px;
           padding: 10px 0 35px;
           border-bottom: 0.5px solid #C7C7C7;
           margin-left: 20px;
@@ -918,8 +952,10 @@ body {
 
   .footer {
     width: 100%;
+    padding: 15px;
 
     .footer__social-media {
+      max-width: 1140px;
       width: 100%;
       height: 100px;
       display: flex;
@@ -927,7 +963,6 @@ body {
       justify-content: space-between;
 
       .footer__logo {
-        margin: 0 0 0 461px;
         background-image: url("../img/HELYFLY2.png");
         background-position: center;
         background-repeat: no-repeat;
@@ -946,16 +981,17 @@ body {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-right: 452px;
 
         a {
           display: block;
           width: 100%;
           height: 100%;
+
           &:hover {
             cursor: pointer;
           }
         }
+
         .sm-icons__vk {
           width: 26px;
           height: 16px;
@@ -965,6 +1001,7 @@ body {
           background-repeat: no-repeat;
           background-size: cover;
         }
+
         .sm-icons__facebook {
           width: 26px;
           height: 26px;
@@ -974,6 +1011,7 @@ body {
           background-repeat: no-repeat;
           background-size: cover;
         }
+
         .sm-icons__instagram {
           width: 26px;
           height: 26px;
@@ -996,11 +1034,12 @@ body {
       height: 90px;
       display: flex;
       align-items: center;
+
       .footer__card {
-        margin-left: 461px;
         display: flex;
         flex-direction: row;
-        .card__icon_mastercard{
+
+        .card__icon_mastercard {
           width: 39px;
           height: 25px;
           margin-right: 20px;
@@ -1009,6 +1048,7 @@ body {
           background-repeat: no-repeat;
           background-size: cover;
         }
+
         .card__icon_visa {
           width: 39px;
           height: 25px;
@@ -1018,13 +1058,14 @@ body {
           background-size: cover;
         }
       }
+
       .footer__copyright-text {
         text-align: center;
-        margin-left: 285px;
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
         color: #B3B3B3;
+
         p {
           margin-bottom: 7px;
         }
@@ -1032,3 +1073,5 @@ body {
     }
   }
 }
+
+@import "mobile";
