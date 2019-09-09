@@ -108,6 +108,8 @@
     }
 
     .reviews-block {
+      margin-bottom: 0;
+
       .reviews-block__reviews-items {
         .reviews-block__reviews-items_review-item {
           flex-direction: column;
@@ -125,6 +127,25 @@
               }
             }
           }
+        }
+      }
+    }
+
+    .footer {
+      .footer__copyright,
+      .footer__social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer__social-media {
+        margin: 0 auto 20px;
+      }
+
+      .footer__copyright {
+        .footer__copyright-text {
+          margin-top: 20px;
         }
       }
     }
